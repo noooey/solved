@@ -1,15 +1,15 @@
 import math
 import sys
-sys.setrecursionlimit(10**5)
+sys.setrecursionlimit(10**6)
+
+dict = {0: 1}
 
 def recursive(i):
-    if i == 0:
-        return 1
-    elif i == 1:
-        return 3
+    if i in dict:
+        return dict[i]
     else:
-        x = recursive(math.floor(i-math.sqrt(i)))+recursive(math.floor(math.log(i)))+recursive(math.floor(i*math.sin(i)*math.sin(i)))
-        return x
+        dict[i] = recursive(math.floor(i-math.sqrt(i)))+recursive(math.floor(math.log(i)))+recursive(math.floor(i*math.sin(i)*math.sin(i)))
+        return dict[i]
 
 
 while(True):
