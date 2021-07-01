@@ -1,21 +1,17 @@
 import math
-
-exp = 0
+exp = 0.000000
 T = int(input())
 
 for i in range(T):
     N = int(input())
     for j in range(N):
         X1, Y1, X2, Y2 = map(int, input().split())
-        if (X1 == 0 and Y1 == 0) or (X2 == 0 and Y2 == 0):
+        aa = X1**2 + Y1**2
+        bb = X2**2 + Y2**2
+        cc = (X1-X2)**2 + (Y1-Y2)**2
+        if aa == 0 or bb == 0:
             exp += math.pi*2
-        elif X1 != 0 and X2 != 0:
-            exp += abs(math.atan(Y1 / X1) - math.atan(Y2 / X2))
-        elif X1 == 0 and X2 != 0:
-            exp += math.pi/2 - abs(math.atan(Y2 / X2))
-        elif X1 != 0 and X2 == 0:
-            exp += math.pi/2 - abs(math.atan(Y1 / X1))
         else:
-            exp += 0
-    print("{:.5f}".format(exp/(math.pi*2)))
-    exp = 0
+            exp += math.acos((aa + bb - cc)/(2*math.sqrt(aa)*math.sqrt(bb)))
+    print("{:.5f}".format(round(exp/(math.pi*2), 5)))
+    exp = 0.00000
