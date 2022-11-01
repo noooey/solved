@@ -1,33 +1,39 @@
-# fail...
-
 import sys
+from itertools import combinations
 input = sys.stdin.readline
 
 n, k = map(int, input().split())
-word_list = [list(input().rstrip()[4:-4]) for _ in range(n)]
-word_list = sorted(word_list, key=len)
-# print(word_list)
 
+# 단어 리스트 인풋
+word_list = [set(input().rstrip()) for _ in range(n)]
+
+# k가 5보다 작거나 26일 경우
+if k < 5:
+    print(0)
+    exit()
+elif k == 26:
+    print(n)
+    exit()
+
+# 알파벳 5개는 알고있어야함
 start_end = set(list('anta')) | set(list('tica'))
-word_set = start_end
 
-w = 0
-if k < 5: # antic 는 읽을 줄 알아야함
-    print(w)
-else:
-    k -= 5
+# 가능한 알파벳 조합
+word_set = set()
+for word in word_list:
+    word -= start_end
+    word_set |= word
+combi_list = list(combinations(word_set, k-5))
+
+max = 0
+for combi in combi_list:
+    w = 0
     for word in word_list:
-        need = 0
-        tmp = set(list(word))
-        if len(tmp-start_end) != 0:
-            need = len(tmp-start_end)
-            if k >= need:
-                k -= need
-                w += 1
-            else:
-                break
-            word_set |= tmp
-        else:
+        if len(word-set(combi)) == 0:
             w += 1
+    if w > max:
+        max = w
+    if max == n:
+        break
 
-print(w)
+print(max)
