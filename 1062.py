@@ -2,38 +2,45 @@ import sys
 from itertools import combinations
 input = sys.stdin.readline
 
+chars = {'a', 'c', 'i', 'n', 't'}
 n, k = map(int, input().split())
+word_list = [set(input().rstrip())-chars for _ in range(n)]
 
-# 단어 리스트 인풋
-word_list = [set(input().rstrip()) for _ in range(n)]
+answer = 0
+if k < 5: # k가 5보다 작으면 배울 수 있는 단어가 없음
+    print(answer)
+else:
+    k -= 5 # a c i n t
 
-# k가 5보다 작거나 26일 경우
-if k < 5:
-    print(0)
-    exit()
-elif k == 26:
-    print(n)
-    exit()
+    # 입력된 단어에 있는 char들 집합을 길이 26짜리 리스트로 표현
+    alpha = [0]*26
 
-# 알파벳 5개는 알고있어야함
-start_end = set(list('anta')) | set(list('tica'))
+    # 입력 단어에 포함된 알파벳 인덱싱
+    for j in range(len(word_list)):
+        w_bit = 0
+        for w in word_list[j]:
+            idx = ord(w) - ord('a')
+            w_bit |= (1 << idx)
+            if alpha[idx] == 0:
+                alpha[idx] = 1
+        word_list[j] = w_bit
 
-# 가능한 알파벳 조합
-word_set = set()
-for word in word_list:
-    word -= start_end
-    word_set |= word
-combi_list = list(combinations(word_set, k-5))
+    input_chars = []
+    for i in range(len(alpha)):
+        bit = 0
+        if alpha[i] == 1:
+            bit |= (1 << i)
+            input_chars.append(bit)
 
-max = 0
-for combi in combi_list:
-    w = 0
-    for word in word_list:
-        if len(word-set(combi)) == 0:
-            w += 1
-    if w > max:
-        max = w
-    if max == n:
-        break
+    if k >= len(input_chars):
+        answer = n
 
-print(max)
+    for combi in combinations(input_chars, k):
+        c = sum(combi)
+        cnt = 0
+        for word in word_list:
+            if word & c == word:
+                cnt += 1
+        answer = max(answer, cnt)
+
+    print(answer)
