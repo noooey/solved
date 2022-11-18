@@ -1,1 +1,4 @@
-알고리즘 문제 풀이
+# Solved Algorithm
+- BOJ
+- Programmers
+- 2021 C++ Programming
