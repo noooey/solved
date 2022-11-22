@@ -6,10 +6,7 @@ m = list(map(int, input().split()))
 m.sort()
 
 best = (m[0], m[1], m[2])
-start = 0
-end = n-3
-while start != end:
-    i = (start + end + 1) // 2
+for i in range(n-2):
     j = i+1
     k = n-1
     while j < k:
@@ -22,9 +19,5 @@ while start != end:
             k -= 1
         else:
             j += 1
-    if sum(best) > 0:
-        end = i - 1
-    else:
-        start = i + 1
 
 print(best[0], best[1], best[2])
