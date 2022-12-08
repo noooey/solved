@@ -13,5 +13,4 @@ def solutions(N, M):
         print(' '.join([str(c) for c in a]))
 
 n, m = map(int, input().split())
-# print(solutions(n, m))
 solutions(m, n)
