@@ -1,34 +1,30 @@
-import sys
-input = sys.stdin.readline
 import heapq
 from collections import deque
+import sys
+input = sys.stdin.readline
 
-test_case = int(input())
-answer = []
-heap = []
-for _ in range(test_case):
-    n, m = map(int, input().split())
-    docs = list(map(int, input().split()))
-    for idx in range(len(docs)):
-        heapq.heappush(heap, (-(docs[idx]+(0.1**(idx+1))), idx))
+def solutions(N, M, DOCS):
+    cnt = 0
+    # 주어진 문서 큐
+    queue = deque(DOCS)
 
-    ranked_docs = deque([])
-    while heap:
-        tmp = heapq.heappop(heap)
-        ranked_docs.append((-int(tmp[0]), tmp[1]))
-
-    cnt = 1
-    for doc in docs:
-        print(ranked_docs[0][1])
-        if ranked_docs[0][0] > doc:
-            docs.pop(0)
-            docs.append(doc)
+    while queue:
+        tmp = queue[0]
+        if tmp[0] == max([i[0] for i in queue]):
+            queue.popleft()
+            cnt += 1
+            if tmp[1] == M:
+                return cnt
         else:
-            docs.pop(0)
-            ranked_docs.popleft()
-        cnt += 1
+            queue.append(queue.popleft())
+    return cnt
 
-    print(cnt)
-
-
-    while cnt
+if __name__ == "__main__":
+    t = int(input())
+    for _ in range(t):
+        n, m = map(int, input().split())
+        imps = list(map(int, input().split()))
+        docs = []
+        for imp, idx in zip(imps, [i for i in range(n)]):
+            docs.append((imp, idx))
+        print(solutions(n, m, docs))
