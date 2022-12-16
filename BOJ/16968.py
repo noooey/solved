@@ -10,7 +10,6 @@ def solutions(S):
         cnt *= 26
 
     for chr in S[1:]:
-        print(f'pre!!! {pre} chr!!! {chr}')
         if chr == 'd': # 숫자
             tmp = cnt
             cnt *= 10
