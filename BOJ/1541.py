@@ -2,7 +2,6 @@ import sys
 input = sys.stdin.readline
 
 def solutions(E):
-    # 모든 조합 경우의 수에 대해 최솟값 산출
     list = []
     tmp = ''
     tmp_n = ''
@@ -22,13 +21,7 @@ def solutions(E):
     tmp += str(int(tmp_n))
     list.append(eval(tmp))
 
-    answer = sys.maxsize
-    for per in list:
-        v = per - (sum(list)-per)
-        answer = min(answer, v)
-        print(answer)
-
-    return answer
+    return list[0] - sum(list[1:])
 
 if __name__ == "__main__":
     equation = input().rstrip()
