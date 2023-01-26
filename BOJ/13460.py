@@ -7,80 +7,68 @@ n, m = map(int, input().split())
 board = []
 for i in range(n):
     tmp = list(input().rstrip())
-    # R과 B의 위치를 받아오기
+    # R과 B, 구멍 위치
     if 'R' in tmp:
         R_location = (i, tmp.index('R'))
+        tmp[tmp.index('R')] = '.'
     if 'B' in tmp:
         B_location = (i, tmp.index('B'))
+        tmp[tmp.index('B')] = '.'
     if 'O' in tmp:
         O_location = (i, tmp.index('O'))
     board.append(tmp)
 
+# 좌표 체크
+rx, ry = R_location[1], R_location[0]
+bx, by = B_location[1], B_location[0]
 ox, oy = O_location[1], O_location[0]
 
-dxs = [1, 0, -1, 0] # 오른쪽, 위, 왼쪽, 아래
-dys = [0, -1, 0, 1]
-visited = [[False]*m for _ in range(n)]
-R_cnt_map = [[0]*m for _ in range(n)]
-B_cnt_map = [[0]*m for _ in range(n)]
+dxy = [(-1, 0), (0, 1), (1, 0), (0, -1)] # 좌, 하, 우, 상
+visited = [] # 방문 여부 체크
 
-def move(dxy, red, blue): # 이동
-    red_location, blue_location = red, blue
-    rx, ry = red[1], red[0]
-    bx, by = blue[1], blue[0]
-    dx, dy = dxy[1], dxy[0]
-    R_tmp_cnt = R_cnt_map[ry][rx] + 1
-    B_tmp_cnt = B_cnt_map[by][bx] + 1
+def move(x, y, dx, dy):
+    cnt = 0
+    nx, ny = x, y
+    while board[ny+dy][nx+dx] != '#' and board[ny][nx] != 'O':
+        nx += dx
+        ny += dy
+        cnt += 1
+    return nx, ny, cnt
 
-    visited[ry][rx] = True
 
-    R_moving = True
-    B_moving = True
-    while R_moving or B_moving:
-        if (bx, by) == (rx+dx, ry+dy) or (bx+dx, by+dy) == (rx, ry): # B랑 R이 붙어있다면
-            if board[by+dy][bx+dx] == '#' or board[ry+dy][rx+dx] == '#': # RB# 배치
-                R_moving = False
-                B_moving = False
-        else:
-            if board[ry+dy][rx+dx] == '#': # R# 배치
-                R_moving = False
-            if board[by+dy][bx+dx] == '#': # B# 배치
-                B_moving = False
+def solutions():
+    queue = deque([(0, rx, ry, bx, by)])
+    visited.append((rx, ry))
 
-        if R_moving:
-            rx += dx
-            ry += dy
-        if B_moving:
-            bx += dx
-            by += dy
-
-        # 이동하는 동안 cnt_map 갱신해주기
-        R_cnt_map[ry][rx] = R_tmp_cnt
-        B_cnt_map[by][bx] = B_tmp_cnt
-
-    return (ry, rx), (by, bx)
-
-def BFS(red, blue):
-    queue = deque([(red, blue)])
     while queue:
-        cur = queue.popleft() # 현재 상태 pop
-        red_location, blue_location = cur[0], cur[1]
-        x, y = red_location[1], red_location[0] # R의 위치
-        if visited[y][x] is False:
-            visited[y][x] == True
-            for dx, dy in zip(dxs, dys):
-                if board[y+dy][x+dx] != '#': # 벽만 아니면 일단 이동 가능하다고 치자
-                    queue.append(move((dy, dx), red_location, blue_location))
-        print(R_cnt_map)
+        cnt, rrx, rry, bbx, bby = queue.popleft()
 
-BFS(R_location, B_location)
+        # 횟수가 10이 넘어가면 리턴 -1
+        if cnt >= 10:
+            return -1
 
-if B_cnt_map[oy][ox] > R_cnt_map[oy][ox] and R_cnt_map[oy][ox] > 0:
-    if R_cnt_map[oy][ox] > 10:
-        print(-1)
-    else:
-        print(R_cnt_map[oy][ox])
-elif B_cnt_map[oy][ox] == 0 and R_cnt_map[oy][ox] > 0:
-    print(R_cnt_map[oy][ox])
-else:
-    print(-1)
+        for dx, dy in dxy:
+            rtx, rty, rcnt = move(rrx, rry, dx, dy)
+            btx, bty, bcnt = move(bbx, bby, dx, dy)
+
+            if board[bty][btx] != 'O': # b가 구멍이 닿지 않았을 때
+                if rtx == ox and rty == oy: # r이 구멍에 도달했다면
+                    return cnt + 1
+
+                # 둘이 같은 선상에 존재했을 경우 -> 둘이 겹쳐짐
+                if (rtx, rty) == (btx, bty):
+                    if rcnt > bcnt: # r이 더 많이 이동, 겹친거 한 칸 뒤로 돌려놔줌
+                        rtx, rty = rtx-dx, rty-dy
+                    else: # b가 더 많이 이동
+                        btx, bty = btx-dx, bty-dy
+
+                if (rtx, rty, btx, bty) in visited:
+                    continue
+                else:
+                    visited.append((rtx, rty, btx, bty))
+                    queue.append((cnt+1, rtx, rty, btx, bty))
+
+    # 갈 곳 없으면 -1
+    return -1
+
+print(solutions())
