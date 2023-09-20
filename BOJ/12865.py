@@ -8,20 +8,16 @@ for _ in range(N):
     W, V = map(int, input().split())
     items[W] = V
 
-# 가치 내림차순 정렬
-# 크기 오름차순 정렬
+dp = [0 for _ in range(K+1)]
+for t in items.items():
+    dp[t[0]] = t[1]
 
-items = sorted(items.items(), key = lambda x : x[1], reverse=True)
+for i in range(K, 0, -1):
+    for item in items.items():
+        if 0 < i - item[0] <= K:
+            dp[i] = max(dp[i-item[0]] + item[1], dp[i])
+            print('******')
+            print(dp)
 
-heap = []
-for item in items:
-    heapq.heappush(heap, item)
-
-
-total = 0
-while K > 0:
-    w, v = heapq.heappop(heap)
-    total += v
-    K -= w
-
-print(total)
+print(dp)
+print(max(dp))
