@@ -1,18 +1,18 @@
 import sys
 input = sys.stdin.readline
 
-n = int(input())
-seq = [0]
-seq += list(map(int, input().split()))
-cnt = [0] + [1 for _ in range(n)]
+def solutions(n, arr):
+    arr = [0] + arr
+    dp = [0] + [1]*n
 
-for i in range(2, n+1):
-    j = i-1
-    while j > 0:
-        if seq[i] > seq[j]:
-            cnt[i] = max(cnt[j]+1, cnt[i])
+    for i in range(2, n+1):
+        j = i-1
+        while j > 0:
+            if arr[i] > arr[j]:
+                dp[i] = max(dp[j] + 1, dp[i])
             j -= 1
-        else:
-            j -= 1
+    return max(dp)
 
-print(max(cnt))
+N = int(input())
+A = list(map(int, input().split()))
+print(solutions(N, A))
