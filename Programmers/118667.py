@@ -7,7 +7,7 @@ def solution(queue1, queue2):
     queue2 = deque(queue2)
 
     answer = 0
-    for _ in range(len(queue1) * 2 + 2):
+    for _ in range((len(queue1) + 1) * 2):
         if sum1 == sum2:
             return answer
         elif sum1 > sum2:
