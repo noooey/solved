@@ -6,3 +6,4 @@
 | 1 | Two Sum | [Python](easy/001_two_sum.py) | HashMap, One-pass |
 | 9 | Palindrome Number | [Python](easy/009_palindrome_number.md) | Two-pointer, One-pass |
 | 13 | Roman to Integer | [Python](easy/013_roman_to_integer.md) | HashMap, One-pass |
+| 14 | Longest Common Prefix | [Python](easy/014_longest_common_prefix.md) | Zip, Trim Prefix |
