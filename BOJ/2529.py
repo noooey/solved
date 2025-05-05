@@ -7,6 +7,8 @@ def solutions(k, k_list):
     while queue:
         cur, idx, cur_list = queue.popleft()
 
+        print(cur, cur_list)
+
         if idx+1 >= k+1:
             results.append(''.join(list(map(str, cur_list))))
             continue

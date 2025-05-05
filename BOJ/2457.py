@@ -21,7 +21,7 @@ for _ in range(N):
             close += MONTH[i]
     close += close_day
 
-    if open <= END and close > START:
+    if open <= END and close > START:   # 3월 1일, 11월 30일에 걸쳐지거나 포함되는 flower인지 체크
         flowers.append((open, close))
 
 # open이 빠르고 close가 느린 순서로 정렬
