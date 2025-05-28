@@ -10,6 +10,7 @@
 | 20 | Valid Parentheses | [Python](easy/020_valid_parentheses.md) | Stack |
 | 21 | Merge Two Sorted Lists | [Python](easy/021_merge_two_sorted_lists.md) | Linkedlist, 🚩 |
 | 26 | Remove Duplicates from Sorted Array | [Python](easy/026_remove_duplicates_from_sorted_array.md) | Two-pointer, 🚩 |
+| 27 | Remove Element | [Python](easy/027_remove_element.md) | Two-pointer |
 
 ### SQL
 
