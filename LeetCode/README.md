@@ -9,6 +9,7 @@
 | 14 | Longest Common Prefix | [Python](easy/014_longest_common_prefix.md) | Zip, Trim Prefix |
 | 20 | Valid Parentheses | [Python](easy/020_valid_parentheses.md) | Stack |
 | 21 | Merge Two Sorted Lists | [Python](easy/021_merge_two_sorted_lists.md) | Linkedlist, 🚩 |
+| 26 | Remove Duplicates from Sorted Array | [Python](easy/026_remove_duplicates_from_sorted_array.md) | Two-pointer, 🚩 |
 
 ### SQL
 
