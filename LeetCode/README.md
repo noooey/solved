@@ -11,7 +11,7 @@
 | 21 | Merge Two Sorted Lists | [Python](easy/021_merge_two_sorted_lists.md) | Linkedlist, 🚩 |
 | 26 | Remove Duplicates from Sorted Array | [Python](easy/026_remove_duplicates_from_sorted_array.md) | Two-pointer, 🚩 |
 | 27 | Remove Element | [Python](easy/027_remove_element.md) | Two-pointer |
-
+| 28 | Find the Index of the First Occurrence in a String | [Python](easy/028_find_the_index_of_the_first_occurrence_in_a_string.md) | Brute-froce |
 ### SQL
 
 | # | Title | Solution | Note |
