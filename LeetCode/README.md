@@ -12,7 +12,7 @@
 | 26 | Remove Duplicates from Sorted Array | [Python](easy/026_remove_duplicates_from_sorted_array.md) | Two-pointer, 🚩 |
 | 27 | Remove Element | [Python](easy/027_remove_element.md) | Two-pointer |
 | 28 | Find the Index of the First Occurrence in a String | [Python](easy/028_find_the_index_of_the_first_occurrence_in_a_string.md) | Brute-froce |
-| 29 | Search Insert Position | [Python](easy/035_search_insert_position.md) | Binary Search |
+| 35 | Search Insert Position | [Python](easy/035_search_insert_position.md) | Binary Search |
 | 58 | Length of Last Word | [Python](easy/058_length_of_last_word.md) | Indexing |
 | 66 | Plus One | [Python](easy/066_plus_one.md) | Iterator |
 | 67 | Add Binary | [Python](easy/067_add_binary.md) | Binary |
