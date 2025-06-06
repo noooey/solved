@@ -19,6 +19,7 @@
 | 69 | Sqrt(x) | [Python](easy/069_sqrt(x).md) | Sqrt |
 | 70 | Climbing Stairs | [Python](easy/070_climbing_stairs.md) | DP |
 | 83 | Remove Duplicates from Sorted List | [Python](easy/083_remove_duplicates_from_sorted_list.md) | Linkedlist, 🚩 |
+| 88 | Merge Sorted Array | [Python](easy/088_merge_sorted_array.md) | Two-pointer, 🚩 |
 
 ### SQL
 
