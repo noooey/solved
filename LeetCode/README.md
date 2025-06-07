@@ -3,24 +3,25 @@
 ### Easy
 | # | Title | Solution | Note |
 |--|-------|----------|------|
-| 1 | Two Sum | [Python](easy/001_two_sum.py) | HashMap, One-pass |
-| 9 | Palindrome Number | [Python](easy/009_palindrome_number.md) | Two-pointer, One-pass |
-| 13 | Roman to Integer | [Python](easy/013_roman_to_integer.md) | HashMap, One-pass |
-| 14 | Longest Common Prefix | [Python](easy/014_longest_common_prefix.md) | Zip, Trim Prefix |
-| 20 | Valid Parentheses | [Python](easy/020_valid_parentheses.md) | Stack |
-| 21 | Merge Two Sorted Lists | [Python](easy/021_merge_two_sorted_lists.md) | Linkedlist, 🚩 |
-| 26 | Remove Duplicates from Sorted Array | [Python](easy/026_remove_duplicates_from_sorted_array.md) | Two-pointer, 🚩 |
-| 27 | Remove Element | [Python](easy/027_remove_element.md) | Two-pointer |
-| 28 | Find the Index of the First Occurrence in a String | [Python](easy/028_find_the_index_of_the_first_occurrence_in_a_string.md) | Brute-froce |
-| 35 | Search Insert Position | [Python](easy/035_search_insert_position.md) | Binary Search |
-| 58 | Length of Last Word | [Python](easy/058_length_of_last_word.md) | Indexing |
-| 66 | Plus One | [Python](easy/066_plus_one.md) | Iterator |
-| 67 | Add Binary | [Python](easy/067_add_binary.md) | Binary |
-| 69 | Sqrt(x) | [Python](easy/069_sqrt(x).md) | Sqrt |
-| 70 | Climbing Stairs | [Python](easy/070_climbing_stairs.md) | DP |
-| 83 | Remove Duplicates from Sorted List | [Python](easy/083_remove_duplicates_from_sorted_list.md) | Linkedlist, 🚩 |
-| 88 | Merge Sorted Array | [Python](easy/088_merge_sorted_array.md) | Two-pointer, 🚩 |
-| 94 | Binary Tree Inorder Traversal | [Python](easy/094_binary_tree_inorder_traversal.md) | Stack, 🚩 |
+| 001 | Two Sum | [Python](easy/001_two_sum.py) | HashMap, One-pass |
+| 009 | Palindrome Number | [Python](easy/009_palindrome_number.md) | Two-pointer, One-pass |
+| 013 | Roman to Integer | [Python](easy/013_roman_to_integer.md) | HashMap, One-pass |
+| 014 | Longest Common Prefix | [Python](easy/014_longest_common_prefix.md) | Zip, Trim Prefix |
+| 020 | Valid Parentheses | [Python](easy/020_valid_parentheses.md) | Stack |
+| 021 | Merge Two Sorted Lists | [Python](easy/021_merge_two_sorted_lists.md) | Linkedlist, 🚩 |
+| 026 | Remove Duplicates from Sorted Array | [Python](easy/026_remove_duplicates_from_sorted_array.md) | Two-pointer, 🚩 |
+| 027 | Remove Element | [Python](easy/027_remove_element.md) | Two-pointer |
+| 028 | Find the Index of the First Occurrence in a String | [Python](easy/028_find_the_index_of_the_first_occurrence_in_a_string.md) | Brute-froce |
+| 035 | Search Insert Position | [Python](easy/035_search_insert_position.md) | Binary Search |
+| 058 | Length of Last Word | [Python](easy/058_length_of_last_word.md) | Indexing |
+| 066 | Plus One | [Python](easy/066_plus_one.md) | Iterator |
+| 067 | Add Binary | [Python](easy/067_add_binary.md) | Binary |
+| 069 | Sqrt(x) | [Python](easy/069_sqrt(x).md) | Sqrt |
+| 070 | Climbing Stairs | [Python](easy/070_climbing_stairs.md) | DP |
+| 083 | Remove Duplicates from Sorted List | [Python](easy/083_remove_duplicates_from_sorted_list.md) | Linkedlist, 🚩 |
+| 088 | Merge Sorted Array | [Python](easy/088_merge_sorted_array.md) | Two-pointer, 🚩 |
+| 094 | Binary Tree Inorder Traversal | [Python](easy/094_binary_tree_inorder_traversal.md) | Binary Tree, Stack, 🚩 |
+| 100 | Same Tree | [Python](easy/100_same_tree.md) | Binary Tree, Recursion, 🚩 |
 
 ### SQL
 
