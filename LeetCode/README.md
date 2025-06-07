@@ -20,6 +20,7 @@
 | 70 | Climbing Stairs | [Python](easy/070_climbing_stairs.md) | DP |
 | 83 | Remove Duplicates from Sorted List | [Python](easy/083_remove_duplicates_from_sorted_list.md) | Linkedlist, 🚩 |
 | 88 | Merge Sorted Array | [Python](easy/088_merge_sorted_array.md) | Two-pointer, 🚩 |
+| 94 | Binary Tree Inorder Traversal | [Python](easy/094_binary_tree_inorder_traversal.md) | Stack, 🚩 |
 
 ### SQL
 
