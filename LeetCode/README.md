@@ -27,6 +27,7 @@
 | # | Title | Solution | Note |
 |--|-------|----------|------|
 | 011 | Container With Most Water | [Python](medium/011_container_with_most_water.md) | Two-pointer |
+| 015 | 3Sum | [Python](medium/015_3sum.md) | Two-pointer, 🚩|
 
 
 ### SQL
