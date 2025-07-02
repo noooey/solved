@@ -30,6 +30,7 @@
 | 015 | 3Sum | [Python](medium/015_3sum.md) | Two-pointer, 🚩|
 | 016 | 3Sum Closest | [Python](medium/016_3sum_closest.md) | Two-pointer |
 | 018 | 4Sum | [Python](medium/018_4sum.md) | Two-pointer, 🚩|
+| 031 | Next Permutation | [Python](medium/031_next_permutation.md) | Array, 🚩 |
 
 
 ### SQL
