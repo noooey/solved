@@ -31,6 +31,7 @@
 | 016 | 3Sum Closest | [Python](medium/016_3sum_closest.md) | Two-pointer |
 | 018 | 4Sum | [Python](medium/018_4sum.md) | Two-pointer, 🚩|
 | 031 | Next Permutation | [Python](medium/031_next_permutation.md) | Array, 🚩 |
+| 033 | Search in Rotated Sorted Array | [Python](medium/033_search_in_rotated_sorted_array.md) | Array |
 
 
 ### SQL
