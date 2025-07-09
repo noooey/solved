@@ -32,6 +32,7 @@
 | 018 | 4Sum | [Python](medium/018_4sum.md) | Two-pointer, 🚩|
 | 031 | Next Permutation | [Python](medium/031_next_permutation.md) | Array, 🚩 |
 | 033 | Search in Rotated Sorted Array | [Python](medium/033_search_in_rotated_sorted_array.md) | Array |
+| 034 | Find First and Last Position of Element in Sorted Array | [Python](medium/034_find_first_and_last_position_of_element_in_sorted_array.md) | Bisect, 🚩 |
 
 
 ### SQL
