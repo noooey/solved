@@ -35,6 +35,7 @@
 | 034 | Find First and Last Position of Element in Sorted Array | [Python](medium/034_find_first_and_last_position_of_element_in_sorted_array.md) | Bisect, 🚩 |
 | 036 | Valid Sudoku | [Python](medium/036_valid_sudoku.md) | Array |
 | 039 | Combination Sum | [Python](medium/039_combination_sum.md) | Back-tracking, Recursion, 🚩 |
+| 040 | Combination Sum II | [Python](medium/040_combination_sum_ii.md) | Back-tracking, Recursion, 🚩 |
 
 
 ### SQL
