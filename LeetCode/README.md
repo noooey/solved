@@ -36,6 +36,7 @@
 | 036 | Valid Sudoku | [Python](medium/036_valid_sudoku.md) | Array |
 | 039 | Combination Sum | [Python](medium/039_combination_sum.md) | Back-tracking, Recursion, 🚩 |
 | 040 | Combination Sum II | [Python](medium/040_combination_sum_ii.md) | Back-tracking, Recursion, 🚩 |
+| 045 | Jump Game II | [Python](medium/045_jump_game_ii.md) | Greedy, 🚩 |
 
 
 ### SQL
