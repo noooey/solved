@@ -38,6 +38,7 @@
 | 040 | Combination Sum II | [Python](medium/040_combination_sum_ii.md) | Back-tracking, Recursion, 🚩 |
 | 045 | Jump Game II | [Python](medium/045_jump_game_ii.md) | Greedy, 🚩 |
 | 046 | Permutations | [Python](medium/046_permutations.md) | Permutation |
+| 047 | Permutations II | [Python](medium/047_permutations_ii.md) | Permutation |
 
 
 ### SQL
