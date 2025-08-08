@@ -39,6 +39,7 @@
 | 045 | Jump Game II | [Python](medium/045_jump_game_ii.md) | Greedy, 🚩 |
 | 046 | Permutations | [Python](medium/046_permutations.md) | Permutation |
 | 047 | Permutations II | [Python](medium/047_permutations_ii.md) | Permutation |
+| 048 | Rotate Image | [Python](medium/048_rotate_image.md) | Swap, 🚩 |
 
 
 ### SQL
