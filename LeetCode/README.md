@@ -41,6 +41,7 @@
 | 047 | Permutations II | [Python](medium/047_permutations_ii.md) | Permutation |
 | 048 | Rotate Image | [Python](medium/048_rotate_image.md) | Swap, 🚩 |
 | 049 | Group Anagrams | [Python](medium/049_group_anagrams.md) | defaultdict |
+| 053 | Maximum Subarray | [Python](medium/053_maximum_subarray.md) | Kadane, 🚩 |
 
 
 ### SQL
