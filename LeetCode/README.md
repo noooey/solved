@@ -42,6 +42,7 @@
 | 048 | Rotate Image | [Python](medium/048_rotate_image.md) | Swap, 🚩 |
 | 049 | Group Anagrams | [Python](medium/049_group_anagrams.md) | defaultdict |
 | 053 | Maximum Subarray | [Python](medium/053_maximum_subarray.md) | Kadane, 🚩 |
+| 054 | Spiral Matrix | [Python](medium/054_spiral_matrix.md) | Indexing |
 
 
 ### SQL
