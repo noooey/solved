@@ -43,6 +43,7 @@
 | 049 | Group Anagrams | [Python](medium/049_group_anagrams.md) | defaultdict |
 | 053 | Maximum Subarray | [Python](medium/053_maximum_subarray.md) | Kadane, 🚩 |
 | 054 | Spiral Matrix | [Python](medium/054_spiral_matrix.md) | Indexing |
+| 055 | Jump Game | [Python](medium/055_jump_game.md) | Greedy |
 
 
 ### SQL
