@@ -44,6 +44,7 @@
 | 053 | Maximum Subarray | [Python](medium/053_maximum_subarray.md) | Kadane, 🚩 |
 | 054 | Spiral Matrix | [Python](medium/054_spiral_matrix.md) | Indexing |
 | 055 | Jump Game | [Python](medium/055_jump_game.md) | Greedy |
+| 056 | Merge Intervals | [Python](medium/056_merge_intervals.md) | Indexing |
 
 
 ### SQL
