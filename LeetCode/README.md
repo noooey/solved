@@ -46,6 +46,7 @@
 | 055 | Jump Game | [Python](medium/055_jump_game.md) | Greedy |
 | 056 | Merge Intervals | [Python](medium/056_merge_intervals.md) | Indexing |
 | 057 | Insert Interval | [Python](medium/057_insert_interval.md) | Indexing |
+| 059 | Spiral Matrix II | [Python](medium/059_spiral_matrix_ii.md) | Indexing |
 
 
 ### SQL
