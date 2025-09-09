@@ -47,6 +47,8 @@
 | 056 | Merge Intervals | [Python](medium/056_merge_intervals.md) | Indexing |
 | 057 | Insert Interval | [Python](medium/057_insert_interval.md) | Indexing |
 | 059 | Spiral Matrix II | [Python](medium/059_spiral_matrix_ii.md) | Indexing |
+| 063 | Unique Paths II | [Python](medium/063_unique_paths_ii.md) | DP, 🚩 |
+| 064 | Minimum Path Sum | [Python](medium/064_minimum_path_sum.md) | DP |
 | 073 | Set Matrix Zeroes | [Python](medium/073_set_matrix_zeroes.md) | Indexing |
 
 
