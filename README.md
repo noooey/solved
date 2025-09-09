@@ -4,3 +4,4 @@
 - Codility
 - Programmers
 - [LeetCode](https://github.com/noooey/solved/tree/main/LeetCode)
+- SWEA
