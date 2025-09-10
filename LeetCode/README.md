@@ -50,6 +50,7 @@
 | 063 | Unique Paths II | [Python](medium/063_unique_paths_ii.md) | DP, 🚩 |
 | 064 | Minimum Path Sum | [Python](medium/064_minimum_path_sum.md) | DP |
 | 073 | Set Matrix Zeroes | [Python](medium/073_set_matrix_zeroes.md) | Indexing |
+| 074 | Search a 2D Matrix | [Python](medium/074_search_a_2d_matrix.md) | Binary Search |
 
 
 ### SQL
