@@ -52,7 +52,7 @@
 | 073 | Set Matrix Zeroes | [Python](medium/073_set_matrix_zeroes.md) | Indexing |
 | 074 | Search a 2D Matrix | [Python](medium/074_search_a_2d_matrix.md) | Binary Search |
 | 075 | Sort Colors | [Python](medium/075_sort_colors.md) | Two-pointer |
-
+| 078 | Subsets | [Python](medium/078_subsets.md) | Combination |
 
 ### SQL
 
