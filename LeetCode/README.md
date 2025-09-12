@@ -53,6 +53,7 @@
 | 074 | Search a 2D Matrix | [Python](medium/074_search_a_2d_matrix.md) | Binary Search |
 | 075 | Sort Colors | [Python](medium/075_sort_colors.md) | Two-pointer |
 | 078 | Subsets | [Python](medium/078_subsets.md) | Combination |
+| 079 | Word Search | [Python](medium/079_word_search.md) | BFS |
 
 ### SQL
 
