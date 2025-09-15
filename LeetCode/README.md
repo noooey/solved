@@ -56,6 +56,7 @@
 | 079 | Word Search | [Python](medium/079_word_search.md) | BFS |
 | 080 | Remove Duplicates from Sorted Array II |[Python](medium/080_remove_duplicates_from_sorted_array_ii.md) | Two-Pointer |
 | 081 | Search in Rotated Sorted Array II | [Python](medium/081_search_in_rotated_sorted_array_ii.md) | Binary Search |
+| 274 | H-Index | [Python](medium/274_h-index.md) | Binary Search, 🚩 |
 
 ### SQL
 
