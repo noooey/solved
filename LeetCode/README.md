@@ -22,6 +22,7 @@
 | 088 | Merge Sorted Array | [Python](easy/088_merge_sorted_array.md) | Two-pointer, 🚩 |
 | 094 | Binary Tree Inorder Traversal | [Python](easy/094_binary_tree_inorder_traversal.md) | Binary Tree, Stack, 🚩 |
 | 100 | Same Tree | [Python](easy/100_same_tree.md) | Binary Tree, Recursion, 🚩 |
+| 121 | Best Time to Buy and Sell Stock | [Python](easy/121_best_time_to_buy_and_sell_stock.md) | Array |
 
 ### Medium
 | # | Title | Solution | Note |
