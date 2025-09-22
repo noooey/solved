@@ -10,3 +10,4 @@
 | 1247 | 최적 경로 | [Python](brute_force/1247_최적_경로.md) | Brute force | D5 |
 | 1210 | Ladder1 | [Python](simulation/1210_ladder1.md) | Simulation | D4 |
 | 1226 | 미로1 | [Python](bfs/1226_미로1.md) | BFS | D4 |
+| 1868 | 파핑파핑 지뢰찾기 | [Python](bfs/1868_파핑파핑_지뢰찾기.md) | BFS | D4 |
