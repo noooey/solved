@@ -60,6 +60,7 @@
 | 274 | H-Index | [Python](medium/274_h-index.md) | Binary Search, 🚩 |
 | 189 | Rotate Array | [Python](medium/189_rotate_array.md) | Rotate Array, 🚩 |
 | 122 | Best Time to Buy and Sell Stock II | [Python](medium/122_best_time_to_buy_and_sell_stock_ii.md) | Array |
+| 380 | Insert Delete GetRandom O(1) | [Python](medium/380_insert_delete_getrandom_o1.md) | HashMap, 🚩 |
 
 ### SQL
 
