@@ -63,6 +63,7 @@
 | 380 | Insert Delete GetRandom O(1) | [Python](medium/380_insert_delete_getrandom_o1.md) | HashMap, 🚩 |
 | 238 | Product of Array Except Self | [Python](medium/238_product_of_array_except_self.md) | Indexing |
 | 134 | Gas Station | [Python](medium/134_gas_station.md) | Greedy |
+| 012 | Integer to Roman | [Python](medium/012_integer_to_roman.md) | Greedy |
 
 ### SQL
 
