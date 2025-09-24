@@ -65,6 +65,7 @@
 | 134 | Gas Station | [Python](medium/134_gas_station.md) | Greedy |
 | 012 | Integer to Roman | [Python](medium/012_integer_to_roman.md) | Greedy |
 | 151 | Reverse Words in a String | [Python](medium/151_reverse_words_in_a_string.md) | String |
+| 006 | Zigzag Conversion | [Python](medium/006_zigzag_conversion.md) | Simulation, 🚩 |
 
 ### SQL
 
