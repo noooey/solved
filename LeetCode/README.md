@@ -24,6 +24,7 @@
 | 100 | Same Tree | [Python](easy/100_same_tree.md) | Binary Tree, Recursion, 🚩 |
 | 121 | Best Time to Buy and Sell Stock | [Python](easy/121_best_time_to_buy_and_sell_stock.md) | Array |
 | 125 | Valid Palindrome | [Python](easy/125_valid_palindrome.md) | Array |
+| 392 | Is Subsequence | [Python](easy/392_is_subsequence.md) | Indexing |
 
 ### Medium
 | # | Title | Solution | Note |
