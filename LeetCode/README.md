@@ -68,6 +68,7 @@
 | 012 | Integer to Roman | [Python](medium/012_integer_to_roman.md) | Greedy |
 | 151 | Reverse Words in a String | [Python](medium/151_reverse_words_in_a_string.md) | String |
 | 006 | Zigzag Conversion | [Python](medium/006_zigzag_conversion.md) | Simulation, 🚩 |
+| 167 | Two Sum II - Input Array Is Sorted | [Python](medium/167_two_sum_ii_-_input_array_is_sorted.md) | Two-Pointer |
 
 ### SQL
 
