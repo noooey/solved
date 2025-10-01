@@ -25,6 +25,7 @@
 | 121 | Best Time to Buy and Sell Stock | [Python](easy/121_best_time_to_buy_and_sell_stock.md) | Array |
 | 125 | Valid Palindrome | [Python](easy/125_valid_palindrome.md) | Array |
 | 392 | Is Subsequence | [Python](easy/392_is_subsequence.md) | Indexing |
+| 205 | Isomorphic Strings | [Python](easy/205_isomorphic_strings.md) | HashMap |
 
 ### Medium
 | # | Title | Solution | Note |
