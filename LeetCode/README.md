@@ -27,6 +27,7 @@
 | 392 | Is Subsequence | [Python](easy/392_is_subsequence.md) | Indexing |
 | 205 | Isomorphic Strings | [Python](easy/205_isomorphic_strings.md) | HashMap |
 | 290 | Word Pattern | [Python](easy/290_word_pattern.md) | HashMap |
+| 242 | Valid Anagram | [Python](easy/242_valid_anagram.md) | HashMap |
 
 ### Medium
 | # | Title | Solution | Note |
