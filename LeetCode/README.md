@@ -29,6 +29,7 @@
 | 290 | Word Pattern | [Python](easy/290_word_pattern.md) | HashMap |
 | 242 | Valid Anagram | [Python](easy/242_valid_anagram.md) | HashMap |
 | 3461 | Check If Digits Are Equal in String After Operations I | [Python](easy/3461_chcek_if_digits_are_equal_in_string_after_operations_i.md) | Array |
+| 202 | Happy Number | [Python](easy/202_happy_number.md) | HashMap, 🚩 |
 
 ### Medium
 | # | Title | Solution | Note |
