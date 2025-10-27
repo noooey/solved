@@ -23,6 +23,6 @@ class Solution:
 
 ## Complexity
 - Time: O(n)
-- 
+
 ## Notes
 - Binary Search
